@@ -3,14 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { MaterialModule } from './material';
+import{BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { TableFilteringExampleComponent } from './table-filtering-example/table-filtering-example.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TableFilteringExampleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
